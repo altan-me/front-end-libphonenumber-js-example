@@ -24,20 +24,31 @@
     </style>
   </head>
   <body>
-    <form>
+    <form class="form">
       <label>Front end libphonenumber-js example</label><br />
-      <input name="phone" class="phone-format" />
+      <input id="phone-input" name="phone" class="phone-format" value="" />
+      <input type="submit" value="Go" />
     </form>
     <script
       type="text/javascript"
       language="javascript"
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
     ></script>
-    <script
+
+    <!-- Phone Library Alternative CDN -->
+    <!-- <script
       type="text/javascript"
       language="javascript"
       src="https://unpkg.com/libphonenumber-js@1.9.11/bundle/libphonenumber-max.js"
+    ></script> -->
+
+    <!-- Phone Library MAX -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/libphonenumber-js@1.9.14/bundle/libphonenumber-max.js"
+      integrity="sha256-0XOp1tkx9lc2cnYWuF6CbEULUsgVtaJz38jBd24iveE="
+      crossorigin="anonymous"
     ></script>
+
     <script src="script.js"></script>
   </body>
 </html>
